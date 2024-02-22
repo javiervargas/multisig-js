@@ -13,7 +13,7 @@ npm install bitcoinjs-lib
 
 # Run
 
-Add 3 extended public keys and generate address [2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3](https://mempool.space/testnet/address/2MyRUizdoLyNKBtc7hCh9rHv5wG1zZrt2wu). Later send some [coins.](https://mempool.space/testnet/tx/b76e4cfe5253568dcf68470598b5e270f3e4827119350a0858e0370e4b255238)
+Add 3 extended public keys and generate address like [2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3](https://mempool.space/testnet/address/2MyRUizdoLyNKBtc7hCh9rHv5wG1zZrt2wu). Later send some [coins.](https://mempool.space/testnet/tx/b76e4cfe5253568dcf68470598b5e270f3e4827119350a0858e0370e4b255238)
 
 ```
 node multisigCheck.js 
