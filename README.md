@@ -37,7 +37,7 @@ Address: 2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3
 
 # Spending
 
-To spend it is necessary to provide some information, it is required to provide two keys and redeemScript and other information.
+To spend it is necessary to provide some information, it is required to provide two keys and redeemScript and other information like change or fees.
 
 <img width="1219" alt="Screenshot 2024-02-22 at 22 00 39" src="https://github.com/javiervargas/multisig-js/assets/7927115/fa122123-4cf6-4e56-8dde-3a1823a3883a">
 
