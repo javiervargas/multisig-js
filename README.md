@@ -75,4 +75,8 @@ error code: -27
 error message:
 Transaction already in block chain
 ```
+# Additional information.
+
+A multi-signature [transaction](https://sntgvrg.medium.com/como-crear-una-direcci%C3%B3n-multifirma-de-bitcoin-ae66d1cb53fa) is a type of transaction that sends funds to a multi-sig address requiring the signatures of certain people in the total group in order to spend the funds. Multiple signatures are typically described as “m of n.” This means that the transaction is locked with a group of “n” keys, and that only “m” of them are sufficient and necessary to unlock the transaction.
+
 
