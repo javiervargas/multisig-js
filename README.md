@@ -1,7 +1,13 @@
 # multisig-js
 
-This is an example program that shows how to spend money from a bitcoin multisig address 2 of 3.   It uses bitcoinjs-lib.
+This is an example program that shows how to spend money from a bitcoin multisig address 2 of 3.   It uses [bitcoinjs-lib.](https://github.com/bitcoinjs/bitcoinjs-lib)
 
+# Installation
+
+```
+npm install bitcoinjs-lib
+
+```
 
 # Run
 
