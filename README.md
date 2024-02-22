@@ -11,7 +11,7 @@ npm install bitcoinjs-lib
 
 # Run
 
-Add 3 extended public keys and generate address [2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3](https://mempool.space/testnet/address/2MyRUizdoLyNKBtc7hCh9rHv5wG1zZrt2wu) and send some [coins.] (https://mempool.space/testnet/tx/b76e4cfe5253568dcf68470598b5e270f3e4827119350a0858e0370e4b255238)
+Add 3 extended public keys and generate address [2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3](https://mempool.space/testnet/address/2MyRUizdoLyNKBtc7hCh9rHv5wG1zZrt2wu) and send some [coins.](https://mempool.space/testnet/tx/b76e4cfe5253568dcf68470598b5e270f3e4827119350a0858e0370e4b255238)
 ```
 node multisigCheck.js 
 [
@@ -31,7 +31,11 @@ Public keys: [
 P2MS script: 522103ec21e586979d7ea14c3ecfd89f2ca5aedd4c99c8a8acff32e4d85e15742c541421023bc7de57c273c53d29962d8f0c47bf88993b784ba2dd327f949c3ffbae192d0c21022b1c11055d800633f9a68b36771501ecf581c29a19bc009bd6948c298150fdd053ae
 Address: 2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3
 ```
+# Spending
 
+For spent it's required add two signatures and redeemScript and other information.
+
+<img width="1219" alt="Screenshot 2024-02-22 at 22 00 39" src="https://github.com/javiervargas/multisig-js/assets/7927115/fa122123-4cf6-4e56-8dde-3a1823a3883a">
 
 ```
 node multisig.js
@@ -58,3 +62,12 @@ Psbt {
 }
 Raw Hex 02000000013852254b0e37e058080a35197182e4f370e2b598054768cf8d565352fe4c6eb700000000fdfd000047304402202c39e76a18ab0c7b7ecc2bb0830172ddcd266b1a341404a1242672bb00533c8502201311feab57e542c812b0a75de950fae83f360a78f5d6efeeedef3d086795e73a01483045022100b51aa91ea98b025d11360620e5278e33eb50dafd1a1a0db8e3d21cea3353a17f02205cba812db433daf9ea3e55f5891dce0f10d637f732cd83978ecf650578b19acb014c6952210239c50fb6e1f9ce31af822921bfd64317d3c74727fc38830346c3afd86321a7df2102919bfe3980d01a05459731a17c8c8c3f844c58b53f0a33ad20d6d81b6ab418492102baf8deb4762cd03296cbc958edaa708d33fa50054241b62d49806e5ee8ff50ec53aeffffffff011027000000000000160014875ed717106056cc868f50cf0b22dc1c2e093f2800000000
 ```
+Send this Raw Hex transaction  [Tx](https://mempool.space/testnet/tx/c91ba4f08f2b4654d1e20878e80b6d0d87d81bb58ad27c62b74f8e2afae4b2da) using public API's or bitcoin-cli.
+
+```
+bitcoin-cli -testnet sendrawtransaction 02000000013852254b0e37e058080a35197182e4f370e2b598054768cf8d565352fe4c6eb700000000fdfd000047304402202c39e76a18ab0c7b7ecc2bb0830172ddcd266b1a341404a1242672bb00533c8502201311feab57e542c812b0a75de950fae83f360a78f5d6efeeedef3d086795e73a01483045022100b51aa91ea98b025d11360620e5278e33eb50dafd1a1a0db8e3d21cea3353a17f02205cba812db433daf9ea3e55f5891dce0f10d637f732cd83978ecf650578b19acb014c6952210239c50fb6e1f9ce31af822921bfd64317d3c74727fc38830346c3afd86321a7df2102919bfe3980d01a05459731a17c8c8c3f844c58b53f0a33ad20d6d81b6ab418492102baf8deb4762cd03296cbc958edaa708d33fa50054241b62d49806e5ee8ff50ec53aeffffffff011027000000000000160014875ed717106056cc868f50cf0b22dc1c2e093f2800000000
+error code: -27
+error message:
+Transaction already in block chain
+```
+
