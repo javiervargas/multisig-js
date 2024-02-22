@@ -5,7 +5,7 @@ This is an example program that shows how to spend money from a bitcoin multisig
 
 # Run
 
-´´´
+```
 node multisigCheck.js 
 [
   'tpubDC2QJtarETt4NkxuTuGc6mvtBKgpnwJwPt8paKvQZKWiUESbHyMzgZyLfjzdnENJWNidnqcCmXhKUfShJ7xz1tgLP7jZpkoXpr7SGaTcEt3',
@@ -23,4 +23,4 @@ Public keys: [
 ]
 P2MS script: 522103ec21e586979d7ea14c3ecfd89f2ca5aedd4c99c8a8acff32e4d85e15742c541421023bc7de57c273c53d29962d8f0c47bf88993b784ba2dd327f949c3ffbae192d0c21022b1c11055d800633f9a68b36771501ecf581c29a19bc009bd6948c298150fdd053ae
 Address: 2MtyQM6F4hd1ALPb36nbjmtWaLHYkHB9Mi3
-´´´
+```
